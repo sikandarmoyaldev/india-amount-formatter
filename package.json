@@ -9,7 +9,8 @@
         "test:php": "pnpm run php test",
         "lint": "pnpm run ts lint",
         "format": "prettier --write \"**/*.{ts,js,json,md,php}\" --ignore-path .gitignore",
-        "format:check": "prettier --check \"**/*.{ts,js,json,md,php}\" --ignore-path .gitignore"
+        "format:check": "prettier --check \"**/*.{ts,js,json,md,php}\" --ignore-path .gitignore",
+        "release": "release-it"
     },
     "devDependencies": {
         "@prettier/plugin-php": "^0.25.0",

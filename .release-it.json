@@ -1,0 +1,19 @@
+{
+    "$schema": "https://unpkg.com/release-it@17/schema/release-it.json",
+    "git": {
+        "commitMessage": "release: v${version}",
+        "tagName": "v${version}",
+        "tagAnnotation": "Release v${version}"
+    },
+    "npm": {
+        "publish": false
+    },
+    "github": {
+        "release": true,
+        "releaseName": "Release v${version}"
+    },
+    "hooks": {
+        "after:bump": "node scripts/sync-composer-version.js",
+        "after:release": "echo Successfully released v${version}!"
+    }
+}

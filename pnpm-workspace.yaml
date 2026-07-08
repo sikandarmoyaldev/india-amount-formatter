@@ -1,5 +1,8 @@
 packages:
-    - 'packages/ts'
+  - 'packages/ts'
 
 allowBuilds:
-    esbuild: false
+  esbuild: false
+
+minimumReleaseAgeExclude:
+  - '@types/node@26.1.1'

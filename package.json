@@ -1,0 +1,21 @@
+{
+    "name": "india-amount-formatter",
+    "private": true,
+    "scripts": {
+        "ts": "pnpm --filter ./packages/ts",
+        "php": "cd packages/php && composer",
+        "test": "pnpm run test:ts && pnpm run test:php",
+        "test:ts": "pnpm run ts test",
+        "test:php": "pnpm run php test",
+        "lint": "pnpm run ts lint",
+        "format": "prettier --write \"**/*.{ts,js,json,md,php}\" --ignore-path .gitignore",
+        "format:check": "prettier --check \"**/*.{ts,js,json,md,php}\" --ignore-path .gitignore"
+    },
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.25.0",
+        "@typescript-eslint/eslint-plugin": "^8.63.0",
+        "@typescript-eslint/parser": "^8.63.0",
+        "eslint": "^10.6.0",
+        "prettier": "^3.9.4"
+    }
+}

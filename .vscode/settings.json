@@ -1,0 +1,55 @@
+{
+    // Editor & Formatting Defaults
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll.eslint": "explicit"
+    },
+
+    // Language-Specific Formatters
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": true
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // File Management & Exclusions
+    "files.exclude": {
+        "**/.git": true,
+        "**/vendor": true,
+        "**/artisan": true,
+        "**/.changeset": true,
+        "**/**.cache": true,
+        "**/node_modules": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/vendor": true,
+        "**/artisan": true,
+        "**/.changeset": true,
+        "**/**.cache": true,
+        "**/node_modules": true
+    },
+
+    // --- File Nesting View Rules ---
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        ".env": ".env.*",
+        "README.md": "*.md, LICENSE",
+        "package.json": "pnpm-lock.yaml, pnpm-workspace.yaml, .prettier*, prettier*, eslint*, tsconfig*, composer.json, composer.lock"
+    }
+}

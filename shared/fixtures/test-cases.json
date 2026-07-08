@@ -1,0 +1,24 @@
+{
+    "formatAmount": [
+        { "input": { "amount": 200000 }, "expected": "₹2 Lakh" },
+        { "input": { "amount": 1500 }, "expected": "₹1.5K" },
+        { "input": { "amount": 500 }, "expected": "₹500" },
+        { "input": { "amount": null }, "expected": "Unlimited" },
+        { "input": { "amount": 10000000 }, "expected": "₹1 Cr" },
+        { "input": { "amount": 1400000 }, "expected": "₹14 Lakh" },
+        { "input": { "amount": 200000, "prefix": "$" }, "expected": "$2 Lakh" }
+    ],
+    "formatPercentage": [
+        { "input": { "value": 3 }, "expected": "3%" },
+        { "input": { "value": "3.50" }, "expected": "3.5%" },
+        { "input": { "value": "invalid" }, "expected": "0%" }
+    ],
+    "formatAmountRange": [
+        { "input": { "min": 100000, "max": 500000 }, "expected": "₹1 Lakh - ₹5 Lakh" },
+        { "input": { "min": 100000, "max": null }, "expected": "₹1 Lakh+" }
+    ],
+    "formatAmountWithActual": [
+        { "input": { "amount": 140000 }, "expected": "₹1.4 Lakh (₹1,40,000)" },
+        { "input": { "amount": 500 }, "expected": "₹500" }
+    ]
+}

@@ -3,7 +3,7 @@
     "private": true,
     "scripts": {
         "ts": "pnpm --filter ./packages/ts",
-        "php": "cd packages/php && composer",
+        "php": "composer",
         "test": "pnpm run test:ts && pnpm run test:php",
         "test:ts": "pnpm run ts test",
         "test:php": "pnpm run php test",

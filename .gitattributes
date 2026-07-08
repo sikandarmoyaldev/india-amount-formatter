@@ -1,0 +1,40 @@
+# ==========================================
+# 1. Exclude files typically found in .gitignore
+# ==========================================
+node_modules/ export-ignore
+vendor/ export-ignore
+dist/ export-ignore
+.env export-ignore
+.env.* export-ignore
+.DS_Store export-ignore
+*.log export-ignore
+
+# ==========================================
+# 2. Exclude TypeScript/JS monorepo files from PHP Packagist zip
+# ==========================================
+/packages/ts export-ignore
+/scripts export-ignore
+/.vscode export-ignore
+/.github export-ignore
+/shared export-ignore
+
+# Exclude JS config and lockfiles
+/package.json export-ignore
+/pnpm-lock.yaml export-ignore
+/pnpm-workspace.yaml export-ignore
+/.release-it.json export-ignore
+
+# Exclude JS formatting/linting configs
+/.gitignore export-ignore
+/.prettierrc export-ignore
+/tsconfig.json export-ignore
+/vitest.config.ts export-ignore
+/.eslintrc.cjs export-ignore
+/.eslintrc.json export-ignore
+/eslint.config.js export-ignore
+
+# ==========================================
+# 3. Exclude composer.lock (Libraries shouldn't ship lockfiles)
+# ==========================================
+/composer.lock export-ignore
+.phpunit.cache/ export-ignore

@@ -53,5 +53,8 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "readme": "packages/php/README.md"
+    }
 }

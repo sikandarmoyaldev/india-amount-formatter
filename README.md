@@ -41,7 +41,7 @@ composer require sikandarmoyaldev/indian-amount-formatter
 ### TypeScript
 
 ```ts
-import * as Inr from '@sikandarmoyaldev/india-amount-formatter';
+import * as Inr from '@sikandarmoyaldev/indian-amount-formatter';
 
 console.log(Inr.formatAmount(200000)); // Output: ₹2 Lakh
 console.log(Inr.formatAmount(4999)); // Output: ₹4.99K
@@ -54,7 +54,7 @@ console.log(Inr.formatAmountWithActual(140000)); // Output: ₹1.4 Lakh (₹1,40
 ### PHP
 
 ```php
-use Sikandarmoyaldev\IndiaAmountFormatter\InrFormatter as Inr;
+use Sikandarmoyaldev\IndianAmountFormatter\InrFormatter as Inr;
 
 echo Inr::formatAmount(200000); // Output: ₹2 Lakh
 echo Inr::formatAmount(4999); // Output: ₹4.99K
@@ -109,7 +109,7 @@ pnpm run test:ts
 pnpm run test:php
 ```
 
-## 📄 Formatting Code
+## 🎨 Formatting Code
 
 We use Prettier globally to format TS, JS, JSON, MD, and PHP files.
 
@@ -121,6 +121,6 @@ pnpm format
 pnpm format:check
 ```
 
-## License
+## 📄 License
 
 This project is licensed under the MIT [License](LICENSE) - see the LICENSE file for details.

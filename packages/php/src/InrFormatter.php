@@ -1,6 +1,6 @@
 <?php
 
-namespace Sikandarmoyaldev\IndiaAmountFormatter;
+namespace Sikandarmoyaldev\IndianAmountFormatter;
 
 /**
  * Indian Amount Formatter
@@ -8,7 +8,7 @@ namespace Sikandarmoyaldev\IndiaAmountFormatter;
  * Formats integers and floats into readable Indian currency short-form:
  * 1,000 -> 1K | 1,00,000 -> 1 Lakh | 1,00,00,000 -> 1 Cr
  *
- * @package Sikandarmoyaldev\IndiaAmountFormatter
+ * @package Sikandarmoyaldev\IndianAmountFormatter
  *
  * @method string format(int|float|null $amount, string $prefix = '₹', ?array $options = null)
  * @method string formatPercentage(mixed $value, ?array $options = null)

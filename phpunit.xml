@@ -5,7 +5,7 @@
          colors="true"
          cacheDirectory=".phpunit.cache">
     <testsuites>
-        <testsuite name="India Amount Formatter Test Suite">
+        <testsuite name="Indian Amount Formatter Test Suite">
             <directory>packages/php/tests</directory>
         </testsuite>
     </testsuites>

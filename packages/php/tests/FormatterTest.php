@@ -1,10 +1,10 @@
 <?php
 
-namespace Sikandarmoyaldev\IndiaAmountFormatter\Tests;
+namespace Sikandarmoyaldev\IndianAmountFormatter\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Sikandarmoyaldev\IndiaAmountFormatter\InrFormatter;
-use Sikandarmoyaldev\IndiaAmountFormatter\Tests\Helpers\FixtureLoader;
+use Sikandarmoyaldev\IndianAmountFormatter\InrFormatter;
+use Sikandarmoyaldev\IndianAmountFormatter\Tests\Helpers\FixtureLoader;
 
 /**
  * Test suite for the InrFormatter class.

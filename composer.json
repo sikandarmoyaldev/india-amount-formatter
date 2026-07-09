@@ -1,5 +1,5 @@
 {
-    "name": "sikandarmoyaldev/india-amount-formatter",
+    "name": "sikandarmoyaldev/indian-amount-formatter",
     "description": "A high-performance PHP utility package for formatting Indian currency amounts, percentages, and ranges.",
     "type": "library",
     "license": "MIT",
@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sikandarmoyaldev\\IndiaAmountFormatter\\": "packages/php/src/"
+            "Sikandarmoyaldev\\IndianAmountFormatter\\": "packages/php/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sikandarmoyaldev\\IndiaAmountFormatter\\Tests\\": "packages/php/tests/"
+            "Sikandarmoyaldev\\IndianAmountFormatter\\Tests\\": "packages/php/tests/"
         }
     },
     "scripts": {

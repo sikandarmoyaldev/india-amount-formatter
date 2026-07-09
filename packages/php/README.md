@@ -15,7 +15,7 @@ composer require sikandarmoyaldev/indian-amount-formatter
 By default, the static methods use `round: false` (truncation) to prevent values like `4999` from incorrectly rounding to `5K`.
 
 ```php
-use Sikandarmoyaldev\IndiaAmountFormatter\InrFormatter as Inr;
+use Sikandarmoyaldev\IndianAmountFormatter\InrFormatter as Inr;
 
 echo Inr::formatAmount(200000); // Output: ₹2 Lakh
 echo Inr::formatAmount(4999); // Output: ₹4.99K
@@ -28,7 +28,7 @@ echo Inr::formatPercentage(3.5); // Output: 3.5%
 You can instantiate the `InrFormatter` class to configure options like rounding.
 
 ```php
-use Sikandarmoyaldev\IndiaAmountFormatter\InrFormatter;
+use Sikandarmoyaldev\IndianAmountFormatter\InrFormatter;
 
 // Enable rounding globally for this instance
 $inr = new InrFormatter(['round' => true]);

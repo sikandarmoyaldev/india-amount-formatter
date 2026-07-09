@@ -1,6 +1,6 @@
 <?php
 
-namespace Sikandarmoyaldev\IndiaAmountFormatter\Tests\Helpers;
+namespace Sikandarmoyaldev\IndianAmountFormatter\Tests\Helpers;
 
 /**
  * Utility class to load shared JSON test fixtures.

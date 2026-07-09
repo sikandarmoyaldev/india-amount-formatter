@@ -1,5 +1,6 @@
 {
     "name": "india-amount-formatter",
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "ts": "pnpm --filter ./packages/ts",
@@ -14,11 +15,11 @@
     },
     "devDependencies": {
         "@prettier/plugin-php": "^0.25.0",
+        "@release-it/conventional-changelog": "^11.0.1",
         "@typescript-eslint/eslint-plugin": "^8.63.0",
         "@typescript-eslint/parser": "^8.63.0",
         "eslint": "^10.6.0",
         "prettier": "^3.9.4",
         "release-it": "^20.2.1"
-    },
-    "version": "1.0.0"
+    }
 }

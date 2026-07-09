@@ -15,5 +15,13 @@
     "hooks": {
         "after:bump": "node scripts/sync-composer-version.js",
         "after:release": "echo Successfully released v${version}!"
+    },
+    "plugins": {
+        "@release-it/conventional-changelog": {
+            "preset": {
+                "name": "angular"
+            },
+            "infile": "CHANGELOG.md"
+        }
     }
 }

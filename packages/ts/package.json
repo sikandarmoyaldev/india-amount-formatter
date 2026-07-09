@@ -1,14 +1,41 @@
 {
     "name": "@sikandarmoyaldev/india-amount-formatter",
     "version": "1.0.0",
-    "description": "Indian Rupee formatting utilities for TypeScript",
+    "description": "A high-performance TypeScript utility package for formatting Indian currency amounts, percentages, and ranges.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
     "scripts": {
         "build": "tsc",
         "test": "vitest run",
         "test:watch": "vitest",
         "lint": "eslint 'src/**/*.ts'"
+    },
+    "keywords": [
+        "india",
+        "inr",
+        "currency",
+        "formatter",
+        "rupee",
+        "lakh",
+        "crore",
+        "typescript",
+        "node",
+        "money",
+        "formatting"
+    ],
+    "author": "Sikandar",
+    "license": "MIT",
+    "homepage": "https://github.com/sikandarmoyaldev/india-amount-formatter#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sikandarmoyaldev/india-amount-formatter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sikandarmoyaldev/india-amount-formatter/issues"
     },
     "devDependencies": {
         "@types/node": "^26.1.1",

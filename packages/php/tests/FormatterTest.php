@@ -93,4 +93,36 @@ class FormatterTest extends TestCase
             );
         }
     }
+
+    /**
+     * Tests the format method with the 'round' option set to true.
+     * This ensures the 4999 -> 5K bug is fixed when round is false (default),
+     * and correctly rounds when round is explicitly set to true.
+     */
+    public function testFormatAmountWithRounding(): void
+    {
+        $inr = new InrFormatter(['round' => true]);
+
+        // 4999 should round to 5K when round is true
+        $this->assertEquals('₹5K', $inr->format(4999));
+        $this->assertEquals('₹10 Lakh', $inr->format(999999));
+        $this->assertEquals('₹10 Cr', $inr->format(99999999));
+
+        // Test method override (force truncate for this specific call)
+        $this->assertEquals('₹4.99K', $inr->format(4999, '₹', ['round' => false]));
+        $this->assertEquals('₹9.99 Lakh', $inr->format(999999, '₹', ['round' => false]));
+    }
+
+    /**
+     * Tests the formatPercentage method with the 'round' option.
+     */
+    public function testFormatPercentageWithRounding(): void
+    {
+        $inr = new InrFormatter(['round' => true]);
+        $this->assertEquals('10%', $inr->formatPercentage(9.999));
+        $this->assertEquals('3.33%', $inr->formatPercentage(3.333));
+
+        // Test method override
+        $this->assertEquals('9.99%', $inr->formatPercentage(9.999, ['round' => false]));
+    }
 }

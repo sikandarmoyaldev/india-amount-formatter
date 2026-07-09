@@ -6,19 +6,46 @@
         { "input": { "amount": null }, "expected": "Unlimited" },
         { "input": { "amount": 10000000 }, "expected": "₹1 Cr" },
         { "input": { "amount": 1400000 }, "expected": "₹14 Lakh" },
-        { "input": { "amount": 200000, "prefix": "$" }, "expected": "$2 Lakh" }
+        { "input": { "amount": 200000, "prefix": "$" }, "expected": "$2 Lakh" },
+
+        { "input": { "amount": 4999 }, "expected": "₹4.99K" },
+        { "input": { "amount": 49999 }, "expected": "₹49.99K" },
+        { "input": { "amount": 99999 }, "expected": "₹99.99K" },
+        { "input": { "amount": 999999 }, "expected": "₹9.99 Lakh" },
+        { "input": { "amount": 9999999 }, "expected": "₹99.99 Lakh" },
+        { "input": { "amount": 99999999 }, "expected": "₹9.99 Cr" },
+
+        { "input": { "amount": 0 }, "expected": "₹0" },
+        { "input": { "amount": 999 }, "expected": "₹999" },
+        { "input": { "amount": 1000 }, "expected": "₹1K" },
+        { "input": { "amount": 100000 }, "expected": "₹1 Lakh" },
+
+        { "input": { "amount": 1500.5 }, "expected": "₹1.5K" },
+        { "input": { "amount": 4999.99 }, "expected": "₹4.99K" }
     ],
     "formatPercentage": [
         { "input": { "value": 3 }, "expected": "3%" },
         { "input": { "value": "3.50" }, "expected": "3.5%" },
-        { "input": { "value": "invalid" }, "expected": "0%" }
+        { "input": { "value": "invalid" }, "expected": "0%" },
+
+        { "input": { "value": 3.333 }, "expected": "3.33%" },
+        { "input": { "value": 9.999 }, "expected": "9.99%" },
+        { "input": { "value": 0 }, "expected": "0%" },
+        { "input": { "value": 100 }, "expected": "100%" }
     ],
     "formatAmountRange": [
         { "input": { "min": 100000, "max": 500000 }, "expected": "₹1 Lakh - ₹5 Lakh" },
-        { "input": { "min": 100000, "max": null }, "expected": "₹1 Lakh+" }
+        { "input": { "min": 100000, "max": null }, "expected": "₹1 Lakh+" },
+
+        { "input": { "min": 4999, "max": 9999 }, "expected": "₹4.99K - ₹9.99K" },
+        { "input": { "min": 0, "max": 1000 }, "expected": "₹0 - ₹1K" }
     ],
     "formatAmountWithActual": [
         { "input": { "amount": 140000 }, "expected": "₹1.4 Lakh (₹1,40,000)" },
-        { "input": { "amount": 500 }, "expected": "₹500" }
+        { "input": { "amount": 500 }, "expected": "₹500" },
+
+        { "input": { "amount": 4999 }, "expected": "₹4.99K (₹4,999)" },
+        { "input": { "amount": 999999 }, "expected": "₹9.99 Lakh (₹9,99,999)" },
+        { "input": { "amount": 1000 }, "expected": "₹1K (₹1,000)" }
     ]
 }

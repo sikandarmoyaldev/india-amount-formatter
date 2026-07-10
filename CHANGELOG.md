@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.1](https://github.com/sikandarmoyaldev/india-amount-formatter/compare/v1.1.0...v1.1.1) (2026-07-10)
+
+- This release updates our internal namespaces and autoload configurations following our package migration from `india` to `indian`. It addresses a critical `Class not found` autoloader issue encountered in consumer environments by strictly aligning file casing layouts.
+
 # [1.1.0](https://github.com/sikandarmoyaldev/india-amount-formatter/compare/v1.0.0...v1.1.0) (2026-07-09)
 
 ### Features

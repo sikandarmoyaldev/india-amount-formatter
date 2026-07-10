@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/sikandarmoyaldev/india-amount-formatter/compare/v1.1.0...v1.1.2) (2026-07-10)
+
+
+### Bug Fixes
+
+* correct tsconfig build output and hide dist folder ([a56fcc1](https://github.com/sikandarmoyaldev/india-amount-formatter/commit/a56fcc197b8acf63905e11e5c9adba86af05df6e))
+
 ## [1.1.1](https://github.com/sikandarmoyaldev/india-amount-formatter/compare/v1.1.0...v1.1.1) (2026-07-10)
 
 - This release updates our internal namespaces and autoload configurations following our package migration from `india` to `indian`. It addresses a critical `Class not found` autoloader issue encountered in consumer environments by strictly aligning file casing layouts.

@@ -29,6 +29,7 @@
     // File Management & Exclusions
     "files.exclude": {
         "**/.git": true,
+        "**/dist": true,
         "**/vendor": true,
         "**/artisan": true,
         "**/.changeset": true,
@@ -37,6 +38,7 @@
     },
     "search.exclude": {
         "**/.git": true,
+        "**/dist": true,
         "**/vendor": true,
         "**/artisan": true,
         "**/.changeset": true,
